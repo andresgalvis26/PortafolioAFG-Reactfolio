@@ -1,4 +1,5 @@
 // @flow strict
+// 'use client';
 import Link from "next/link";
 
 
@@ -10,7 +11,7 @@ function Navbar() {
           <Link
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-            ABU SAID
+            AFG
           </Link>
         </div>
 
@@ -35,6 +36,17 @@ function Navbar() {
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></Link>
           </li>
+          {/* <li className="ml-4">
+            <select
+              // onChange={(e) => i18n.changeLanguage(e.target.value)}
+              className="bg-transparent text-white border border-white px-2 py-1 rounded"
+            >
+              <option value="en">EN</option>
+              <option value="es">ES</option>
+            </select>
+          </li> */}
+
+
         </ul>
       </div>
     </nav>

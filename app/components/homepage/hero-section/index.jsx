@@ -26,7 +26,7 @@ function HeroSection() {
             Hello, <br />
             This is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
+            {`, I'm a Professional `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
             .
           </h1>
@@ -108,29 +108,41 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
+                <span className="text-amber-300">Andrés Felipe Galvis</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">age:</span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-amber-300">26 years</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
                 <span className=" text-white">skills:</span>
                 <span className="text-gray-400">{`['`}</span>
+                <span className="text-amber-300">HTML, CSS and JS</span>
+                <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NextJS</span>
+                <span className="text-amber-300">Vue</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
+                <span className="text-amber-300">Node and NPM</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Express</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
+                <span className="text-amber-300">PHP and Laravel</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
+                <span className="text-amber-300">MySQL or SQL Server</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
+                <span className="text-amber-300">Microsoft Azure</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AWS</span>
+                <span className="text-amber-300">Git</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Operating Systems</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Documentation</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
