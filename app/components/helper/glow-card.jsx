@@ -4,8 +4,18 @@ import { useEffect } from 'react';
 
 const GlowCard = ({ children , identifier}) => {
   useEffect(() => {
+    // Verificar que estamos en el cliente antes de acceder al DOM
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return;
+    }
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+
+    // Verificar que los elementos existan
+    if (!CONTAINER || !CARDS.length) {
+      return;
+    }
 
     const CONFIG = {
       proximity: 40,
@@ -60,11 +70,11 @@ const GlowCard = ({ children , identifier}) => {
     };
 
     RESTYLE();
-    UPDATE();
-
-    // Cleanup event listener
+    UPDATE();    // Cleanup event listener
     return () => {
-      document.body.removeEventListener('pointermove', UPDATE);
+      if (typeof document !== 'undefined') {
+        document.body.removeEventListener('pointermove', UPDATE);
+      }
     };
   }, [identifier]);
 
