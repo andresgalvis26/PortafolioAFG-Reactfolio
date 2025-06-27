@@ -13,6 +13,8 @@ export const es = {
     // Hero Section
     hero: {
         greeting: "Hola,",
+        name: "ANDRÉS GALVIS",
+        profession: "Ingeniero Software | Desarrollador Full Stack",
         this_is: "Mi nombre es",
         im_a: ",y soy",
         professional: "profesional en",
