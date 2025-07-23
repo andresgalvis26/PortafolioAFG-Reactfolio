@@ -9,9 +9,9 @@ export const personalData = {
   github: 'https://github.com/andresgalvis26',
   facebook: 'https://www.facebook.com/afelipegalvis/',
   linkedIn: 'https://www.linkedin.com/in/andres-felipe-galvis-galviz/',
-  twitter: 'https://twitter.com/said7388',
+  twitter: 'https://twitter.com/',
   stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  leetcode: "https://leetcode.com/",
+  devUsername: "anfelipegalvis",
+  resume: "https://drive.google.com/file/d/1rlK89CjQd43WUovrhzit8ieHOsi7B496/view?usp=sharing"
 }
