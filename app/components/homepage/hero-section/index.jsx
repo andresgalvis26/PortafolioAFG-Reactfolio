@@ -13,6 +13,8 @@ import { useLanguage } from "@/app/contexts/LanguageContext";
 
 function HeroSection() {
   const { t } = useLanguage();
+  const coderData = t('hero.coder');
+
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
@@ -107,62 +109,80 @@ function HeroSection() {
                 <span className="text-gray-400">{'{'}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">{coderData.properties.name}:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Andrés Felipe Galvis Galviz</span>
+                <span className="text-amber-300">{coderData.name}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">age:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">{coderData.properties.age}:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">26 years</span>
+                <span className="text-amber-300">{coderData.age}</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">{coderData.properties.degree}:</span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-amber-300">{coderData.degree} - {coderData.university}</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">HTML, CSS and JS</span>
+                <span className=" text-white">{coderData.properties.skills}:</span>
+                <span className="text-gray-400">{` ['`}</span>
+                {/* <span className="text-amber-300">HTML, CSS, JS</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">React</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Vue</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Node and NPM</span>
+                <span className="text-amber-300">Node, Express + NPM</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">REST APIs</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">CI-CD</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">PHP and Laravel</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySQL or SQL Server</span>
+                <span className="text-amber-300">MySQL, SQL Server, MongoDB</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Microsoft Azure</span>
+                <span className="text-amber-300">Microsoft Azure and Azure DevOps</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
+                <span className="text-amber-300">Docker and K8s</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Git</span>
+                <span className="text-amber-300">Git, GitHub, GitLab</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Operating Systems</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Documentation</span>
-                <span className="text-gray-400">{"'],"}</span>
+                <span className="text-gray-400">{"', "}</span>
+                <span className="text-amber-300">SCRUM</span>
+                <span className="text-gray-400">{"'],"}</span> */}
+                {coderData.skills.map((skill, index) => (
+                  <span key={index}>
+                    <span className="text-amber-300">{skill}</span>
+                    <span className="text-gray-400">
+                      {index < coderData.skills.length - 1 ? `', '` : `']`}
+                    </span>
+                  </span>
+                ))}
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
-                <span className="text-orange-400">true</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">{coderData.properties.hardWorker}:</span>
+                <span className="text-orange-400">{coderData.hardWorker}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
-                <span className="text-orange-400">true</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">{coderData.properties.quickLearner}:</span>
+                <span className="text-orange-400">{coderData.quickLearner}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
-                <span className="text-orange-400">true</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">{coderData.properties.problemSolver}:</span>
+                <span className="text-orange-400">{coderData.problemSolver}</span>
                 <span className="text-gray-400">,</span>
               </div>
               <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
+                <span className="ml-4 lg:ml-8 mr-2 text-green-400">{coderData.properties.hireable}:</span>
                 <span className="text-orange-400">function</span>
                 <span className="text-gray-400">{'() {'}</span>
               </div>
@@ -172,17 +192,17 @@ function HeroSection() {
               </div>
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">hardWorker</span>
+                <span className="mr-2 text-white">{coderData.properties.hardWorker}</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">problemSolver</span>
+                <span className="mr-2 text-white">{coderData.properties.problemSolver}</span>
                 <span className="text-amber-300">&amp;&amp;</span>
               </div>
               <div>
                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">skills.length</span>
+                <span className="mr-2 text-white">{coderData.properties.skills}.length</span>
                 <span className="mr-2 text-amber-300">&gt;=</span>
                 <span className="text-orange-400">5</span>
               </div>

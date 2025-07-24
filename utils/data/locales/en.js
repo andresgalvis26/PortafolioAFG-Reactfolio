@@ -19,7 +19,43 @@ export const en = {
         im_a: ", I'm a",
         professional: "Professional",
         contact_me: "Contact me",
-        get_resume: "Get Resume"
+        get_resume: "Get Resume",
+        coder: {
+            name: "Andrés Felipe Galvis Galviz",
+            age: "26 years",
+            degree: "Software Engineer",
+            university: "University of Santander - UDES",
+            skills: [
+                "HTML, CSS, JS",
+                "React",
+                "Vue",
+                "Node, Express + NPM",
+                "REST APIs",
+                "CI-CD",
+                "PHP and Laravel",
+                "MySQL, SQL Server, MongoDB",
+                "Microsoft Azure and Azure DevOps",
+                "Docker and K8s",
+                "Git, GitHub, GitLab",
+                "Operating Systems",
+                "Documentation",
+                "SCRUM"
+            ],
+            hardWorker: "true",
+            quickLearner: "true",
+            problemSolver: "true",
+            properties: {
+                name: "name",
+                age: "age",
+                degree: "degree",
+                university: "university",
+                skills: "skills",
+                hardWorker: "hardWorker",
+                quickLearner: "quickLearner",
+                problemSolver: "problemSolver",
+                hireable: "hireable"
+            }
+        }
     },
 
     // About Section

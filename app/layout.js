@@ -11,7 +11,7 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Andrés Galvis - Software Developer",
+  title: "Portfolio | Andrés Galvis",
   description:
     "Portfolio of Andrés Galvis, Software Engineer and Senior Developer with expertise in React, Node.js, and modern web technologies. Passionate about creating robust, scalable applications and committed to continuous learning and professional growth.",
 };

@@ -19,7 +19,43 @@ export const es = {
         im_a: ",y soy",
         professional: "profesional en",
         contact_me: "Contáctame",
-        get_resume: "Descargar CV"
+        get_resume: "Descargar CV",
+        coder: {
+            name: "Andrés Felipe Galvis Galviz",
+            age: "26 años",
+            degree: "Ingeniero de Software",
+            university: "Universidad de Santander - UDES",
+            skills: [
+                "HTML, CSS, JS",
+                "React",
+                "Vue",
+                "Node, Express + NPM",
+                "REST APIs",
+                "CI-CD",
+                "PHP y Laravel",
+                "MySQL, SQL Server, MongoDB",
+                "Microsoft Azure y Azure DevOps",
+                "Docker y K8s",
+                "Git, GitHub, GitLab",
+                "Sistemas Operativos",
+                "Documentación",
+                "SCRUM"
+            ],
+            hardWorker: "true",
+            quickLearner: "true",
+            problemSolver: "true",
+            properties: {
+                name: "nombre",
+                age: "edad",
+                degree: "titulo",
+                university: "universidad",
+                skills: "habilidades",
+                hardWorker: "trabajadorDedicado",
+                quickLearner: "aprendizajeRapido",
+                problemSolver: "resolucionProblemas",
+                hireable: "contratame"
+            }
+        }
     },
 
 
